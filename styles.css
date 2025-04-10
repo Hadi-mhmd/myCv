@@ -1,18 +1,148 @@
+General Styling
+body {
+    background: rgb(204, 204, 204);
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    position: relative;
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+@page {
+    size: 21cm 29.7cm;
+    margin: 0mm;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
-  }
-  .leftPanel {
+}
+
+.leftPanel {
     width: 27%;
     background-color: #484444;
     padding: 0.7cm;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .rightPanel {
+}
+
+.rightPanel {
     width: 73%;
     padding: 0.7cm;
-  }
+}
+
+.item {
+    padding-bottom: 0.7cm;
+    padding-top: 0.7cm;
+}
+
+.item h2 {
+    margin-top: 0;
+}
+
+.bottomLineSeparator {
+    border-bottom: 0.05cm solid white;
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.leftPanel h2 {
+    color: white;
+}
+
+img {
+    width: 4cm;
+    height: 4cm;
+    margin-bottom: 0.7cm;
+    border-radius: 50%;
+    border: 0.15cm solid white;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Section */
+.leftPanel .smallText, 
+.leftPanel .smallText span, 
+.leftPanel .smallText p, 
+.smallText a {
+    font-size: 0.45cm;
+}
+
+.smallText, 
+.smallText span, 
+.smallText p, 
+.smallText a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+.contactIcon {
+    width: 0.5cm;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.leftPanel, 
+.leftPanel a {
+    color: #bebebe;
+    text-decoration: none;
+}
+
+.smallText p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.smallText a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.45cm;
+    margin-left: 5px;
+}
+
+.leftPanel a:hover {
+    color: #ffffff;
+}
+
+
+.item .smallText {
+    padding: 0;
+    margin: 0;
+}
+
+.skillsList, .languagesList, .hobbiesList {
+    list-style: none;
+    padding-left: 0; /* Remove left padding */
+    margin: 0; /* Remove margins to ensure the list items align directly under the heading */
+}
+
+.skillsList li, .languagesList li, .hobbiesList li {
+    margin: 0; /* Remove margin between list items */
+    padding: 0.2cm 0; /* Add slight padding for readability */
+    color: #bebebe;
+    font-size: 0.45cm;
+}
