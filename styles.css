@@ -146,3 +146,164 @@ img {
     color: #bebebe;
     font-size: 0.45cm;
 }
+
+
+.rightPanel {
+    width: 73%;
+    padding: 1cm;
+    background-color: white;
+    color: #333;
+    font-size: 0.45cm;
+}
+
+.rightPanel .section {
+    margin-bottom: 0.75cm;
+}
+
+.rightPanel h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 0.4cm;
+    margin-bottom: 0.3cm;
+    color: #222;
+}
+
+.rightPanel h3 {
+    font-size: 0.4cm;
+    margin: 0.3cm 0 0.1cm 0;
+}
+
+.rightPanel p {
+    margin-bottom: 0.2cm;
+}
+
+.rightPanel ul {
+    padding-left: 1cm;
+    margin-top: 0;
+}
+
+.rightPanel ul li {
+    margin-bottom: 0.2cm;
+}
+
+.headerName {
+    text-align: center;
+    margin-bottom: 0.4cm;
+}
+
+.headerName h1 {
+    font-size: 1cm;
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #222;
+    letter-spacing: 0.05cm;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.smalltxt{
+    font-size: medium;
+} 
+
+.date {
+    color: #888; /* or try #aaa, #999, etc., depending on how light you want it */
+  }
+  
+
+  ul.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  ul.timeline li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul.timeline li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #888; /* lighter dot */
+    border-radius: 50%;
+  }
+  
+  ul.timeline li::after {
+    content: '';
+    position: absolute;
+    left: 3.5px;
+    top: 14px;
+    bottom: -10px;
+    width: 1px;
+    background-color: #ccc;
+  }
+  
+  ul.timeline li:last-child::after {
+    display: none;
+  }
+
+  
+  
+
+.experience-section {
+    background-color: #f0f0f0; /* Light gray background for contrast */
+    border-left: 4px solid #4CAF50; /* Green left border for emphasis */
+    padding: 0.25cm; /* Slight padding for breathing room */
+    margin-bottom: 0.25cm; /* Space below the section */
+}
+
+.experience-section h1 {
+    font-size: 0.5cm; /* Maintain size but make it bold */
+    color: #333; /* Darker color for better contrast */
+    margin-bottom: 0.2cm; /* Reduced space below the title */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.experience-section h3 {
+    font-size: 0.45cm; /* Keep the size compact */
+    color: #555; /* Slightly lighter color for the subtitle */
+    margin-bottom: 0.1cm; /* Space below the subtitle */
+}
+
+
+
+.experience-section ul li {
+    position: relative; /* Position for the pseudo-element */
+    padding-left: 20px; /* Space for the bullet */
+    margin-bottom: 0.1cm; /* Space between list items */
+    color: #666; /* Text color */
+    font-size: 0.375cm; /* Font size for list */
+}
+
+.experience-section ul li::before {
+    content: '•'; /* Use a bullet character */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left */
+    color: #282a28; /* Color of the bullet */
+    font-size: 0.35cm; /* Size of the bullet */
+    line-height: 0.35cm; /* Align bullet with text */
+}    
+.project_section {
+    background-color: #f0f0f0; /* Light gray background for contrast */
+    border-left: 4px solid #4CAF50; /* Green left border for emphasis */
+    padding: 0.25cm; /* Slight padding for breathing room */
+    margin-bottom: 0.25cm; /* Space below the section */
+}
+.project_section ul li {
+    position: relative; /* Position for the pseudo-element */
+    padding-left: 20px; /* Space for the bullet */
+    margin-bottom: 0.1cm; /* Space between list items */
+    color: #666; /* Text color */
+    font-size: 0.35cm; /* Font size for list */
+}
