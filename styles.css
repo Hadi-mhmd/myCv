@@ -307,3 +307,55 @@ img {
     color: #666; /* Text color */
     font-size: 0.35cm; /* Font size for list */
 }
+
+
+.leftPanel {
+    width: 30%;
+    background-color: #e6e6e6;
+    padding: 0.5cm;
+    box-sizing: border-box;
+}
+
+.rightPanel {
+    width: 70%;
+    padding: 0.5cm;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: auto;
+    padding: 1cm;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: white;
+}
+
+.leftPanel a {
+    word-break: break-all;
+    color: inherit; /* Optional: match surrounding text color */
+    text-decoration: none; /* Optional: cleaner look */
+    font-size: 0.35cm; /* Match the rest of the left panel text size */
+}
+
+.smallText, .details {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.leftPanel {
+    width: 6.5cm;
+}
+
+.rightPanel {
+    width: calc(100% - 6.5cm);
+}
